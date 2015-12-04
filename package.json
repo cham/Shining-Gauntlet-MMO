@@ -1,0 +1,28 @@
+{
+  "name": "Shining-Gauntlet-MMO",
+  "main": "index.js",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "preinstall": "npm prune",
+    "postinstall": "bower cache clean && bower install && npm run installgithooks",
+    "installgithooks": "chmod +x hooks/* && cp hooks/* .git/hooks || :",
+    "start": "node .",
+    "lint": "eslint .",
+    "style": "jscs .",
+    "test": "mocha ."
+  },
+  "dependencies": {
+    "bower": "^1.6.8",
+    "express": "4.13.3",
+    "hogan-express": "0.5.2",
+    "routemaster": "0.2.2"
+  },
+  "devDependencies": {
+    "eslint": "1.10.3",
+    "jscs": "2.6.0",
+    "mocha": "2.3.4",
+    "sandboxed-module": "2.0.3",
+    "sinon": "1.17.2"
+  }
+}

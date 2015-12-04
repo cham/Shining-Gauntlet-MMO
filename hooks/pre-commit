@@ -1,0 +1,11 @@
+set -e
+
+ROOT=`git rev-parse --show-toplevel`
+CHANGED=`git status --porcelain | grep "^[MARC]"`
+CHANGED_JS=`echo "$CHANGED" | grep ".js$" | sed -e "s:^.* :$ROOT/:"  | tr '\n' ' '`
+CHANGED_MD=`echo "$CHANGED" | grep ".md$" | sed -e "s:^.* :$ROOT/:"  | tr '\n' ' '`
+
+if [ -n "$CHANGED_JS" ]; then
+    $(npm bin)/eslint $CHANGED_JS
+    $(npm bin)/jscs $CHANGED_JS
+fi

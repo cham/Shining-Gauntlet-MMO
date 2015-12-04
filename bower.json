@@ -1,0 +1,23 @@
+{
+  "name": "Shining-Gauntlet-MMO",
+  "version": "0.0.1",
+  "authors": [
+    "Dan Neame <danneame@gmail.com>"
+  ],
+  "description": "SGMMO bower",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.3.4",
+    "expectations": "0.5.2",
+    "sinon": "1.17.2",
+    "bogus": "0.3.6"
+  }
+}

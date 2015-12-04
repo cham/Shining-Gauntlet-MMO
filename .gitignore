@@ -1,0 +1,6 @@
+# Folders
+.DS_Store
+node_modules
+bower_components
+npm_cache
+npm-debug.log
