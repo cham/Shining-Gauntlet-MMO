@@ -8,8 +8,8 @@ const appConfig = require('./lib/appConfig');
 const app = express();
 
 app.set('views', path.join(__dirname, './views'));
-app.set('view engine', 'template');
-app.engine('template', require('hogan-express'));
+app.set('view engine', 'html');
+app.engine('html', require('hogan-express'));
 
 app.use(routemaster({
     directory: './routing/routes',
