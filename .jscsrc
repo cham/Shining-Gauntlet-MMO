@@ -1,0 +1,31 @@
+{
+    "requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
+    "requireSpaceAfterKeywords": ["switch", "return"],
+    "requireParenthesesAroundIIFE": true,
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpaceAfterObjectKeys": true,
+    "requireCommaBeforeLineBreak": true,
+    "requireSpaceBeforeBinaryOperators": ["=", "+", "-", "/", "*", "==", "===", "!=", "!=="],
+    "requireSpaceAfterBinaryOperators": ["=", ",", "+", "-", "/", "*", "==", "===", "!=", "!=="],
+    "requireSpacesInConditionalExpression": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "disallowKeywords": ["with"],
+    "disallowMultipleLineStrings": true,
+    "validateLineBreaks": "LF",
+    "validateQuoteMarks": { "mark": "'", "escape": true },
+    "validateIndentation": 4,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowKeywordsOnNewLine": ["else", "catch"],
+    "requireLineFeedAtFileEnd": true,
+    "maximumLineLength": 140,
+    "requireCapitalizedConstructors": true,
+    "excludeFiles": [
+        "node_modules/**"
+    ]
+}
