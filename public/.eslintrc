@@ -1,0 +1,25 @@
+{
+    "env": {
+        "amd": true,
+        "browser": true,
+        "node": false,
+        "es6": false
+    },
+    "rules": {
+        "strict": [2, "function"],
+        "no-use-before-define": [2, "nofunc"],
+        "max-params": 0,
+        "max-statements": 0,
+
+        "arrow-spacing": 0,
+        "constructor-super": 0,
+        "generator-star-spacing": 0,
+        "no-class-assign": 0,
+        "no-const-assign": 0,
+        "no-dupe-class-members": 0,
+        "no-this-before-super": 0,
+        "object-shorthand": 0,
+        "prefer-const": 0,
+        "prefer-template": 0
+    }
+}
